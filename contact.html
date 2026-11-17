@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ - Dự án Web</title>
+  <!-- Liên kết chung file CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Yêu cầu 3: Liên kết truy cập nhanh -->
+  <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
+  <header>
+    <!-- Thanh điều hướng dùng chung cho cả 3 trang -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gallery.html">Thư viện ảnh</a></li>
+        <li><a href="contact.html" class="active">Giới thiệu & Liên hệ</a></li>
+      </ul>
+    </nav>
+    <h1>Thông tin Liên hệ & Giới thiệu</h1>
+  </header>
+
+  <!-- Nội dung chính -->
+  <main id="main-content">
+    <section class="contact-section">
+      <div class="contact-card">
+        <h2>Về dự án học tập</h2>
+        <p>
+          Trang web này được xây dựng như một phần của bài tập thực hành thiết kế web, 
+          áp dụng các kỹ thuật hiện đại bao gồm cấu trúc HTML5 ngữ nghĩa, Flexbox, CSS Grid, 
+          mô hình hộp (Box Model) và đảm bảo các tiêu chuẩn truy cập (Accessibility).
+        </p>
+        
+        <!-- THÊM ẢNH VÀO ĐÂY ĐỂ ĐÁP ỨNG YÊU CẦU 1 -->
+        <div class="contact-image" style="margin-top: 15px; text-align: center;">
+          <img src="images/chicken.png" alt="Minh họa không gian thiết kế web" style="width: 100%; max-width: 400px; border-radius: 8px; border: 2px solid #ccc; padding: 4px;">
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h2>Gửi phản hồi cho chúng tôi</h2>
+        <!-- Form liên hệ mẫu -->
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn..." required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email..." required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Nội dung tin nhắn:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Nhập nội dung góp ý..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Gửi thông tin</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Trang web dự án cá nhân. Đã xác thực chuẩn W3C.</p>
+  </footer>
+</body>
+</html>

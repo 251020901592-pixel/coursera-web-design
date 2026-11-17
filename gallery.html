@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư viện ảnh - Bộ sưu tập của tôi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip link -->
+  <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
+  <header>
+    <!-- Thanh điều hướng dùng chung -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gallery.html" class="active">Thư viện ảnh</a></li>
+        <li><a href="contact.html">Giới thiệu</a></li>
+      </ul>
+    </nav>
+    <h1>Thư viện bộ sưu tập ảnh</h1>
+  </header>
+
+  <!-- Nội dung chính chứa ít nhất 5 hình ảnh và áp dụng Grid + nth-child -->
+  <main id="main-content">
+    <section class="gallery-section">
+      <h2>Khám phá các góc nhìn khác nhau</h2>
+      <p>Trang này tổng hợp các hình ảnh mẫu được trình bày bằng lưới CSS Grid và hiệu ứng hình ảnh đa dạng.</p>
+      
+      <!-- Khung lưới chứa 5 hình ảnh -->
+      <div class="gallery-grid">
+        <img src="images/long.jpg" alt="Ảnh mô tả 1: Không gian làm việc">
+        <img src="images/hlong.jpg" alt="Ảnh mô tả 2: Thiết kế web responsive">
+        <img src="images/nhlong.jpg" alt="Ảnh mô tả 3: Giao diện trực quan">
+        <img src="images/concua.jpg" alt="Ảnh mô tả 4: Sáng tạo mã nguồn">
+        <img src="images/conga.jpg" alt="Ảnh mô tả 5: Hoàn thiện dự án">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Trang web dự án cá nhân. Đã xác thực chuẩn W3C.</p>
+  </footer>
+</body>
+</html>
